@@ -3,7 +3,7 @@ from imageio import imread
 import sys
 
 def usage():
-    print("img2dm - Transmits image to Dot Matrix ESL\n")
+    print("img2ir - Transmits image to Dot Matrix ESL\n")
     print("Usage:")
     print("img2dm.py port image barcode page (x y)\n")
     print("  name: file name for generated .ir file")
@@ -139,14 +139,14 @@ for fr in range(0, frame_count):
 # Refresh frame
 frames.append(pr.make_refresh_frame(PLID))
 
-projectName = sys.argv[1]
+fileName = sys.argv[1]
 
 #Output
-with open(f"{projectName}.ir", "w") as f:
+with open(f"{fileName}.ir", "w") as f:
     f.write(f"""Filetype: IR Signals file
 Version: 1
 #
-name: {projectName}
+name: {fileName}
 type: raw
 frequency: 38000
 duty_cycle: 0.330000
