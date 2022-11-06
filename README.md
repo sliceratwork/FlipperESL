@@ -11,3 +11,5 @@ Run img2ir.py with the following arguements:
 * 4. Page number of the page number to update on the ESL (0~15)
 
 A **.ir** file will be generated that can be uploaded to a Flipper Zero through qFlipper.
+
+*Note that imageio python package is required to run the code*
