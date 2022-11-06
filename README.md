@@ -8,7 +8,7 @@ Original files: https://github.com/furrtek/PrecIR
 ## Usage
 Run img2ir.py with the following arguements: 
 * 1. Name for the .ir file that will be generated. 
-* 2. Image file name of image to be converted (208x102 pixels or less)
+* 2. Image file name of image to be converted (208x112 pixels or less)
 * 3. Barcode number of your ESL. You can either read the code on the back or scan the barcode using an app on your phone.
 * 4. Page number of the page number to update on the ESL (0~15)
 
